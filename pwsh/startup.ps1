@@ -13,5 +13,14 @@ $ErrorActionPreference="Stop"
 $ErrorActionPreference="Continue"
 
 # TODO
-holofetch
 __zoxide_z projects
+holofetch
+
+# . $PSScriptRoot\utility\notify.ps1
+# jrnl -tag '@task' -tag '@event' -on today --format json 2>$null | ConvertFrom-Json | Select-Object -ExpandProperty entries | Foreach-Object {
+#     Show-Notification -Title "Today at $($_.Time): $($_.Title)" -Text $_.Body
+# }
+
+# jrnl -tag '@task' -tag '@event' -on tomorrow --format json 2>$null | ConvertFrom-Json | Select-Object -ExpandProperty entries | Foreach-Object {
+#     Show-Notification -Title "Tomorrow at $($_.Time): $($_.Title)" -Text $_.Body
+# }

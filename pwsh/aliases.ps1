@@ -55,3 +55,7 @@ Set-Alias -Name grep -Value Find-Matches
 Set-Alias -Name weather -Value Get-WeatherReport
 
 #####################################################################
+
+. $PSScriptRoot\utility\journal.ps1
+
+#####################################################################
